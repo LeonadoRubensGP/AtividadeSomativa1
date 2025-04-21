@@ -56,4 +56,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/atividadeSomativa1:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/atividadesomativa1:latest
