@@ -18,8 +18,8 @@ async def root():
     """Retorna uma mensagem simples de boas-vindas."""
     return {"message": "Hello World"}
 
-# http://127.0.0.1:8000/teste1
-@app.get("/teste1")
+# http://127.0.0.1:8000/teste
+@app.get("/teste")
 async def funcaoteste():
     """Retorna uma mensagem simples de boas-vindas."""
     return {"message": "função de teste 1"}
