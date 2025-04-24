@@ -16,7 +16,6 @@ async def test_funcaoteste():
     assert result == {"message": True, "num_aleatorio": 123456}
 
 
-
 @pytest.mark.asyncio
 async def test_create_estudante():
     estudante_teste = Estudante(name="Fulano", curso="Curso 1", ativo=False)
