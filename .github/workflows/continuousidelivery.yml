@@ -30,7 +30,7 @@ jobs:
       run: ls -R
 
       
-  buildx-docker:
+  docker:
     runs-on: ubuntu-latest
     steps:
       -

@@ -10,34 +10,17 @@ class Estudante(BaseModel):
     curso: str
     ativo: bool
 
-
-
 # http://127.0.0.1:8000/
 @app.get("/")
 async def root():
     """Retorna uma mensagem simples de boas-vindas."""
     return {"message": "Hello World"}
 
-# http://127.0.0.1:8000/teste
-@app.get("/teste")
-async def funcaoteste():
-    """Retorna uma mensagem simples de boas-vindas."""
-    return {"message": "função de teste 1"}
-
-# http://127.0.0.1:8000/outrospontos
-@app.get("/outrospontos")
-async def funcaoteste():
-    """Retorna uma mensagem simples de boas-vindas."""
-    return {"message": "outrospontos"}
-
 # http://127.0.0.1:8000/randnum
 @app.get("/randnum")
-async def funcaoteste2():
+async def funcaoteste():
     """Retorna uma mensagem simples de boas-vindas."""
-    return {"message": True, "Numero Random": random.randint(0, 2000)}
-
-
-
+    return {"message": True, "num_aleatorio": random.randint(0, 2000)}
 
 
 @app.post("/estudantes/cadastro")
